@@ -102,6 +102,7 @@ header address ul {
 
 header address ul li a {
   color: var(--slate);
+  font-style: normal;
 }
 
 header address ul li a:hover,
