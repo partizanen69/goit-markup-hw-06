@@ -11,8 +11,6 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
   background-color: #fff;
@@ -28,16 +26,13 @@ body {
 }
 
 /* header */
-header {
+.header {
   margin: 0 auto;
   flex-shrink: 0;
 }
 
-header nav {
-}
-
-header .logo,
-footer.class-footer-exactly-how-goit-wants .logo {
+.header-logo,
+.footer .logo {
   color: var(--iris);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -47,75 +42,65 @@ footer.class-footer-exactly-how-goit-wants .logo {
   text-transform: uppercase;
 }
 
-header .logo .logo-right,
-footer.class-footer-exactly-how-goit-wants .logo .logo-right {
+.header-logo-right,
+.footer-logo-right {
   color: var(--navyblue);
 }
 
-header nav .menu {
+.header-menu {
   margin: 0 0 0 76px;
 }
 
-header nav .menu ul {
-}
-
-header nav .menu .menu-item {
+.header-menu-item {
   color: var(--navyblue);
   font-weight: 500;
 }
 
-header nav .menu .menu-item:visited {
+.header-menu-item:visited {
   color: var(--navyblue);
 }
 
-header nav .menu .menu-item:hover,
-header nav .menu .menu-item:focus {
+.header-menu-item:hover,
+.header-menu-item:focus {
   color: var(--ocean);
   text-decoration: underline;
 }
 
-header address.class-address-specifically-how-goit-wants {
+.header-address {
   font-style: normal;
 }
 
-header address.class-address-specifically-how-goit-wants ul {
-}
-
-header address.class-address-specifically-how-goit-wants ul li a {
+.header-address-item {
   color: var(--slate);
 }
 
-header address.class-address-specifically-how-goit-wants ul li a:hover,
-header address.class-address-specifically-how-goit-wants ul li a:focus {
+.header-address-item:hover,
+.header-address-item:focus {
   color: var(--ocean);
 }
 /* /header */
 
 /* footer */
-footer.class-footer-exactly-how-goit-wants {
+.footer {
   margin: 120px 0 0 0;
   background: var(--navyblue);
 }
 
-footer .footer-inner {
-  margin: 0 auto;
-}
-
-footer.class-footer-exactly-how-goit-wants .logo .logo-right {
+.footer-logo-right {
   color: var(--cloud);
 }
 
-footer.class-footer-exactly-how-goit-wants .footer-details {
+.footer-details {
   color: var(--cloud);
 }
 /* /footer */
 
 /* main studio */
-main.studio .first-section {
+.studio .first-section {
   background-color: var(--navyblue);
 }
 
-main.studio .first-section .title {
+.studio .first-section-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -123,7 +108,7 @@ main.studio .first-section .title {
   color: #ffffff;
 }
 
-main.studio .first-section .order-btn {
+.studio .first-section-order {
   background-color: var(--iris);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -133,13 +118,13 @@ main.studio .first-section .order-btn {
   color: #ffffff;
 }
 
-main.studio .first-section .order-btn:hover,
-main.studio .first-section .order-btn:focus {
+.studio .first-section-order:hover,
+.studio .first-section-order:focus {
   background-color: var(--ocean);
   cursor: pointer;
 }
 
-main.studio .second-section .advantage-name {
+.studio .second-section-advantage {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -147,14 +132,14 @@ main.studio .second-section .advantage-name {
   color: var(--navyblue);
 }
 
-main.studio .second-section .advantage-details {
+.studio .second-section-details {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
 
-main.studio .third-section .third-section-title {
+.studio .third-section-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -163,11 +148,11 @@ main.studio .third-section .third-section-title {
   color: var(--navyblue);
 }
 
-main.studio .fourth-section {
+.studio .fourth-section {
   background-color: var(--cloud);
 }
 
-main.studio .fourth-section .fourth-section-title {
+.studio .fourth-section-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -176,11 +161,11 @@ main.studio .fourth-section .fourth-section-title {
   color: var(--navyblue);
 }
 
-main.studio .fourth-section .team-item {
+.studio .team-item {
   background-color: #ffffff;
 }
 
-main.studio .fourth-section .team-item-name {
+.studio .team-item-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -188,22 +173,22 @@ main.studio .fourth-section .team-item-name {
   color: var(--navyblue);
 }
 
-main.studio .fourth-section .team-item-details {
+.studio .team-item-details {
   font-size: 16px;
 }
 /* /main studio */
 
 /* main portfolio */
-main.portfolio {
+.portfolio {
   margin: 0 auto;
 }
 
-main.portfolio .filter-buttons {
+.portfolio .filter-buttons {
   margin: 96px 0 0 0;
   justify-content: center;
 }
 
-main.portfolio .filter-buttons .filter-btn {
+.portfolio .filter-btn {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -216,24 +201,24 @@ main.portfolio .filter-buttons .filter-btn {
   letter-spacing: 0.04em;
 }
 
-main.portfolio .filter-buttons .filter-btn:hover,
-main.portfolio .filter-buttons .filter-btn:focus {
+.portfolio .filter-btn:hover,
+.portfolio .filter-btn:focus {
   background-color: var(--ocean);
   color: var(--white);
   cursor: pointer;
 }
 
-main.portfolio .cards {
+.portfolio .cards {
   margin: 72px 0 0 0;
 }
 
-main.portfolio .cards .card-row .card {
+.portfolio .card {
   flex-shrink: 0;
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
 }
 
-main.portfolio .cards .card-name {
+.portfolio .card-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -241,7 +226,7 @@ main.portfolio .cards .card-name {
   color: var(--navyblue);
 }
 
-main.portfolio .cards .card-details {
+.portfolio .card-details {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
