@@ -12,7 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   background-color: #fff;
   color: var(--slate);
 }
