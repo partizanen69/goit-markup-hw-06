@@ -17,6 +17,10 @@ body {
   color: var(--slate);
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -29,6 +33,26 @@ body {
 .header {
   margin: 0 auto;
   flex-shrink: 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-inner {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-logo {
+  margin-right: 76px;
 }
 
 .header-logo,
@@ -49,11 +73,14 @@ body {
 
 .header-menu {
   margin: 0 0 0 76px;
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-item {
   color: var(--navyblue);
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .header-menu-item:visited {
@@ -68,6 +95,8 @@ body {
 
 .header-address {
   font-style: normal;
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-item {
