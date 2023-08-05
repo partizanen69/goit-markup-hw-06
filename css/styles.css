@@ -29,6 +29,10 @@ img {
   list-style-type: none;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 /* header */
 .header {
   margin: 0 auto;
@@ -160,12 +164,26 @@ img {
   cursor: pointer;
 }
 
+.studio .second-section {
+  padding: 120px;
+}
+
+.studio .second-section-advantages {
+  display: flex;
+  gap: 24px;
+}
+
+.studio .second-section-advantages-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .studio .second-section-advantage {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navyblue);
+  margin-bottom: 8px;
 }
 
 .studio .second-section-details {
