@@ -65,6 +65,8 @@ ol {
   margin: 0 auto;
   flex-shrink: 0;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-inner {
@@ -113,6 +115,19 @@ ol {
   font-weight: 500;
   padding: 24px 0;
   display: block;
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .header-menu-item:visited {
@@ -139,6 +154,7 @@ ol {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-item:hover,
@@ -172,6 +188,11 @@ ol {
 /* main studio */
 .studio .first-section {
   background-color: var(--navyblue);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/studio-first-sceen-bg.jpg);
   padding: 188px 0;
 }
 
