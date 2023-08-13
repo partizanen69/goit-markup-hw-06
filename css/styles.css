@@ -248,6 +248,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .studio .first-section-title {
@@ -399,6 +400,7 @@ ol {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 8px;
 }
 
 .studio .team-social-item {
@@ -437,6 +439,7 @@ ol {
   line-height: 1.11;
   color: var(--navyblue);
   margin-bottom: 72px;
+  text-align: center;
 }
 
 .studio .clients {
@@ -460,6 +463,7 @@ ol {
   color: va(--client);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--client);
 }
 
 .studio .clients-link:hover,
@@ -522,9 +526,8 @@ ol {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.studio-body .modal-close:hover {
-  background-color: #404bbf;
-  border: none;
+.studio-body .modal-close:hover,
+.studio-body .modal-close:focus {
   background-color: #404bbf;
   border: none;
 }
@@ -533,8 +536,8 @@ ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.studio-body .modal-close-icon:hover,
-.studio-body .modal-close-icon:focus {
+.studio-body .modal-close:hover .modal-close-icon,
+.studio-body .modal-close:focus .modal-close-icon {
   fill: #ffffff;
 }
 
