@@ -171,6 +171,15 @@ ol {
   background: var(--navyblue);
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-details-wrap {
+  margin-right: 120px;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -184,6 +193,45 @@ ol {
   color: var(--cloud);
   max-width: 264px;
 }
+
+.footer-socials-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-list-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #31d0aa;
+}
+
+.social-icon {
+  fill: var(--cloud);
+}
+
 /* /footer */
 
 /* main studio */
