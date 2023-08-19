@@ -250,6 +250,10 @@ ol {
   fill: var(--cloud);
 }
 
+.subscribe {
+  margin-left: 80px;
+}
+
 .subscribe-header {
   margin-bottom: 16px;
   font-weight: 500;
@@ -305,6 +309,7 @@ ol {
 
 .subscribe-btn-icon {
   margin-left: 16px;
+  fill: #ffffff;
 }
 
 /* /footer */
