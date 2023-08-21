@@ -724,6 +724,11 @@ ol {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
+  color: var(--white);
+}
+
+.checkbox-svg {
+  fill: currentColor;
 }
 
 .modal-fake-checkbox {
@@ -738,6 +743,7 @@ ol {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  color: transparent;
 }
 
 .modal-policy-link {
