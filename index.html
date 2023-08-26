@@ -11,12 +11,7 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/studio.css" />
 
     <title>Document</title>
   </head>
@@ -41,6 +36,7 @@
             <li><a class="header-menu-item link" href="">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="header-address list">
             <li>
@@ -57,6 +53,31 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-toggle-btn js-open-menu">
+          <svg
+            width="32"
+            height="22"
+            viewBox="0 0 32 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_297053_2156)">
+              <path
+                d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                stroke="#2E2F42"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_297053_2156">
+                <rect width="32" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -416,7 +437,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-details-wrap">
           <a class="footer-logo link" href="./index.html"
@@ -429,7 +450,7 @@
         </div>
         <div class="footer-socials">
           <p class="footer-socials-title">Social media</p>
-          <ul class="footer-social-list list">
+          <ul class="social-list list">
             <li class="social-list-item">
               <a class="social-link" href="">
                 <svg class="social-icon" width="24" height="24">
@@ -484,7 +505,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div data-modal class="modal-wrap is-hidden">
       <div class="modal">
@@ -577,5 +598,108 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
+    <div class="js-menu-container" id="mobile-menu" aria-expanded="false">
+      <div class="js-menu-container-top">
+        <div class="js-close-wrap">
+          <button type="button" class="js-close-menu">
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="close-black-18dp (2) 1" clip-path="url(#clip0_593782_170)">
+                <path
+                  id="Vector"
+                  d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                  fill="#2E2F42"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_593782_170">
+                  <rect width="8" height="8" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="mobile-menu-nav">
+          <ul class="header-menu-mobile list">
+            <li>
+              <a class="header-menu-item menu-current link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="header-menu-item link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="header-menu-item link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="js-menu-container-bottom">
+        <address class="js-menu-address">
+          <ul class="header-address list">
+            <li>
+              <a
+                class="header-address-item phone-item link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-address-item email-item link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="js-menu-socials">
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a class="social-link" href="">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-list-item">
+              <a class="social-link" href="">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-list-item">
+              <a class="social-link" href="">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-list-item">
+              <a class="social-link" href="">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
