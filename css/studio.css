@@ -470,7 +470,42 @@
 @media screen and (min-width: 768px) {
   .studio-body .modal {
     width: 408px;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 25px 24px 23px;
+  }
+
+  .studio .second-section-advantages {
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-wrap: wrap;
+  }
+
+  .studio .second-section-advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .studio .fourth-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .studio .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+    max-width: 820px;
+  }
+
+  .studio .clients {
+    column-gap: 24px;
+  }
+
+  .studio .clients-item {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
   }
 }
 
@@ -480,8 +515,7 @@
   }
 
   .studio .second-section-advantages {
-    flex-direction: row;
-    gap: 24px;
+    /* gap: 24px; */
   }
 
   .studio .advantage-icon-wrap {
@@ -512,6 +546,7 @@
   .studio .team {
     flex-direction: row;
     gap: 24px;
+    max-width: inherit;
   }
 
   .studio .team-item {
@@ -530,5 +565,9 @@
   .studio .clients-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+  }
+
+  .studio-body .modal {
+    padding: 72px 24px 24px 24px;
   }
 }
